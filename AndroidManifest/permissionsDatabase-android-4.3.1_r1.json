@@ -1,0 +1,1028 @@
+[
+  {
+    "description": "Must be required by an android.service.notification.NotificationListenerServic, to ensure that only the system can bind to it."
+  },
+  {
+    "name": "android.permission.BIND_NOTIFICATION_LISTENER_SERVICE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to read the current set of notifications, including any metadata and intents attached.",
+    "name": "android.permission.ACCESS_NOTIFICATIONS",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to hold an UpdateLock, recommending that a headless OTA reboot *not* occur while the lock is held.",
+    "name": "android.permission.UPDATE_LOCK",
+    "protectionLevel": "signatureOrSystem"
+  },
+  {
+    "description": "Allows the holder to access content providers from outside an ApplicationThread.  This permission is enforced by the ActivityManagerService on the corresponding APIs, in particular ActivityManagerService#getContentProviderExternal(String) and ActivityManagerService#removeContentProviderExternal(String).",
+    "name": "android.permission.ACCESS_CONTENT_PROVIDERS_EXTERNALLY",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows applications to access serial ports via the SerialManager.",
+    "name": "android.permission.SERIAL_PORT",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Must be required by package verifier receiver, to ensure that only the system can interact with it.",
+    "name": "android.permission.BIND_PACKAGE_VERIFIER",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Package verifier needs to have this permission before the PackageManager will trust it to verify packages.",
+    "name": "android.permission.PACKAGE_VERIFICATION_AGENT",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "C2DM permission.  Used internally.",
+    "name": "android.intent.category.MASTER_CLEAR.permission.C2D_MESSAGE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to account its network traffic against other UIDs. Used by system services like download manager and media server. Not for use by third party apps.",
+    "name": "android.permission.MODIFY_NETWORK_ACCOUNTING",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to manage network policies (such as warning and disable limits) and to define application-specific rules.",
+    "name": "android.permission.MANAGE_NETWORK_POLICY",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to read historical network usage for specific networks and applications.",
+    "name": "android.permission.READ_NETWORK_USAGE_HISTORY",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Internal permission protecting access to the encryption methods",
+    "name": "android.permission.CRYPT_KEEPER",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Must be required by default container service so that only the system can bind to it and use it to copy protected data to secure containers or files accessible to the system.",
+    "name": "android.permission.COPY_PROTECTED_DATA",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allow an application to read and write the cache partition.",
+    "name": "android.permission.ACCESS_CACHE_FILESYSTEM",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows applications to write dream settings, and start or stop dreaming.",
+    "name": "android.permission.WRITE_DREAM_STATE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows applications to read dream settings and dream state.",
+    "name": "android.permission.READ_DREAM_STATE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows applications to set a live wallpaper.  XXX Change to signature once the picker is moved to its own apk as Ghod Intended.",
+    "name": "android.permission.SET_WALLPAPER_COMPONENT",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Internal permission protecting access to the global search system: ensures that only the system can access the provider to perform queries (since this otherwise provides unrestricted access to a variety of content providers), and to write the search statistics (to keep applications from gaming the source ranking).",
+    "name": "android.permission.GLOBAL_SEARCH_CONTROL",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "This permission can be used on content providers to allow the global search system to access their data.  Typically it used when the provider has some permissions protecting it (which global search would not be expected to hold), and added as a read-only permission to the path in the provider where global search queries are performed.  This permission can not be held by regular applications; it is used by applications to protect themselves from everyone else besides global search.",
+    "name": "android.permission.GLOBAL_SEARCH",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows applications to change the background data setting.  Not for use by third-party applications.  pending API council",
+    "name": "android.permission.CHANGE_BACKGROUND_DATA_SETTING",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Internal permission allowing an application to query/set which applications can bind AppWidgets.",
+    "name": "android.permission.MODIFY_APPWIDGET_BIND_PERMISSIONS",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Private permission, to restrict who can bring up a dialog to add a new keyguard widget",
+    "name": "android.permission.BIND_KEYGUARD_APPWIDGET",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to tell the AppWidget service which application can access AppWidget's data.  The normal user flow is that a user picks an AppWidget to go into a particular host, thereby giving that host application access to the private data from the AppWidget app.  An application that has this permission should honor that contract.  Not for use by third-party applications.",
+    "name": "android.permission.BIND_APPWIDGET",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Must be required by a android.widget.RemoteViewsServic, to ensure that only the system can bind to it.",
+    "name": "android.permission.BIND_REMOTEVIEWS",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows a package to launch the secure full-backup confirmation UI.  ONLY the system process may hold this permission.",
+    "name": "android.permission.CONFIRM_FULL_BACKUP",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to control the backup and restore process.  Not for use by third-party applications.  pending API council",
+    "name": "android.permission.BACKUP",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to collect battery statistics",
+    "name": "android.permission.BATTERY_STATS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to collect component usage statistics",
+    "name": "android.permission.PACKAGE_USAGE_STATS",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows read/write access to the 'properties' table in the checkin database, to change values that get uploaded.  Not for use by third-party applications.",
+    "name": "android.permission.ACCESS_CHECKIN_PROPERTIES",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows enabling/disabling location update notifications from the radio.  Not for use by third-party applications.",
+    "name": "android.permission.CONTROL_LOCATION_UPDATES",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to perform CDMA OTA provisioning",
+    "name": "android.permission.PERFORM_CDMA_PROVISIONING",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to call any phone number, including emergency numbers, without going through the Dialer user interface for the user to confirm the call being placed.  Not for use by third-party applications.",
+    "name": "android.permission.CALL_PRIVILEGED",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Not for use by third-party applications.",
+    "name": "android.permission.MASTER_CLEAR",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to broadcast a WAP PUSH receipt notification.  Not for use by third-party applications.",
+    "name": "android.permission.BROADCAST_WAP_PUSH",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to broadcast an SMS receipt notification.  Not for use by third-party applications.",
+    "name": "android.permission.BROADCAST_SMS",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to broadcast a notification that an application package has been removed.  Not for use by third-party applications.",
+    "name": "android.permission.BROADCAST_PACKAGE_REMOVED",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Run as a manufacturer test application, running as the root user.  Only available when the device is running in manufacturer test mode.  Not for use by third-party applications.",
+    "name": "android.permission.FACTORY_TEST",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows low-level access to tun tap driver",
+    "name": "android.permission.NET_TUNNELING",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows low-level access to power management.  Not for use by third-party applications.",
+    "name": "android.permission.DEVICE_POWER",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Required to be able to reboot the device.  Not for use by third-party applications.",
+    "name": "android.permission.REBOOT",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Required to be able to disable the device (very dangerous!).  Not for use by third-party applications..",
+    "name": "android.permission.BRICK",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to control low-level features of Wifi displays such as opening an RTSP socket.  This permission should only be used by the display manager.",
+    "name": "android.permission.CONTROL_WIFI_DISPLAY",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to configure and connect to Wifi displays",
+    "name": "android.permission.CONFIGURE_WIFI_DISPLAY",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to take screen shots and more generally get access to the frame buffer data.  Not for use by third-party applications.",
+    "name": "android.permission.READ_FRAME_BUFFER",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to use SurfaceFlinger's low level features.  Not for use by third-party applications.",
+    "name": "android.permission.ACCESS_SURFACE_FLINGER",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to grant or revoke specific permissions.",
+    "name": "android.permission.GRANT_REVOKE_PERMISSIONS",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to change whether an application component (other than its own) is enabled or not.  Not for use by third-party applications.",
+    "name": "android.permission.CHANGE_COMPONENT_ENABLED_STATE",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to move location of installed package.",
+    "name": "android.permission.MOVE_PACKAGE",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to delete packages.  Not for use by third-party applications.",
+    "name": "android.permission.DELETE_PACKAGES",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to delete cache files.  Not for use by third-party applications.",
+    "name": "android.permission.DELETE_CACHE_FILES",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to clear user data.  Not for use by third-party applications.",
+    "name": "android.permission.CLEAR_APP_USER_DATA",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to install packages.  Not for use by third-party applications.",
+    "name": "android.permission.INSTALL_PACKAGES",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows low-level access to setting the keyboard layout.  Not for use by third-party applications.",
+    "name": "android.permission.SET_KEYBOARD_LAYOUT",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows low-level access to setting the pointer speed.  Not for use by third-party applications.",
+    "name": "android.permission.SET_POINTER_SPEED",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows low-level access to setting the orientation (actually rotation) of the screen.  Not for use by third-party applications.",
+    "name": "android.permission.SET_ORIENTATION",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Must be required by device administration receiver, to ensure that only the system can interact with it.",
+    "name": "android.permission.BIND_DEVICE_ADMIN",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Must be required by a android.service.wallpaper.WallpaperServic, to ensure that only the system can bind to it.",
+    "name": "android.permission.BIND_WALLPAPER",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Must be required by an android.net.VpnServic, to ensure that only the system can bind to it.",
+    "name": "android.permission.BIND_VPN_SERVICE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Must be required by a TextService (e.g. SpellCheckerService) to ensure that only the system can bind to it.",
+    "name": "android.permission.BIND_TEXT_SERVICE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Must be required by an android.accessibilityservice.AccessibilityServic, to ensure that only the system can bind to it.",
+    "name": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Must be required by an android.inputmethodservice.InputMethodServic, to ensure that only the system can bind to it.",
+    "name": "android.permission.BIND_INPUT_METHOD",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to retrieve the current state of keys and switches.  Not for use by third-party applications.  The API that used this permission has been removed.",
+    "name": "android.permission.READ_INPUT_STATE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to retrieve private information about the current top activity, such as any assist context it can provide.  Not for use by third-party applications.",
+    "name": "android.permission.GET_TOP_ACTIVITY_INFO",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to tell the activity manager to temporarily stop application switches, putting it into a special mode that prevents applications from immediately switching away from some critical UI such as the home screen.",
+    "name": "android.permission.STOP_APP_SWITCHES",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to call the activity manager shutdown() API to put the higher-level system there into a shutdown state.",
+    "name": "android.permission.SHUTDOWN",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to watch and control how activities are started globally in the system.  Only for is in debugging (usually the monkey command).  Not for use by third-party applications.",
+    "name": "android.permission.SET_ACTIVITY_WATCHER",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to magnify the content of a display.",
+    "name": "android.permission.MAGNIFY_DISPLAY",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to temporary enable accessibility on the device.",
+    "name": "android.permission.TEMPORARY_ENABLE_ACCESSIBILITY",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to retrieve info for a window from the window manager.",
+    "name": "android.permission.RETRIEVE_WINDOW_INFO",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to register an input filter which filters the stream of user events (keys, touch, trackball) before they are dispatched to any window.",
+    "name": "android.permission.FILTER_EVENTS",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to inject user events (keys, touch, trackball) into the event stream and deliver them to ANY window.  Without this permission, you can only deliver events to windows in your own process.  Not for use by third-party applications.",
+    "name": "android.permission.INJECT_EVENTS",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows the application to temporarily freeze the screen for a full-screen transition.",
+    "name": "android.permission.FREEZE_SCREEN",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to manage (create, destroy, Z-order) application tokens in the window manager.  Not for use by third-party applications.",
+    "name": "android.permission.MANAGE_APP_TOKENS",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to open windows that are for use by parts of the system user interface.  Not for use by third-party applications.",
+    "name": "android.permission.INTERNAL_SYSTEM_WINDOW",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to update application operation statistics. Not for use by third party apps.",
+    "name": "android.permission.UPDATE_APP_OPS_STATS",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to collect battery statistics",
+    "name": "android.permission.GET_APP_OPS_STATS",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Allows an application to update device statistics.  Not for use by third-party applications.",
+    "name": "android.permission.UPDATE_DEVICE_STATS",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to force a BACK operation on whatever is the top activity.  Not for use by third-party applications.",
+    "name": "android.permission.FORCE_BACK",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to be the status bar.  Currently used only by SystemUI.apk",
+    "name": "android.permission.STATUS_BAR_SERVICE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to open, close, or disable the status bar and its icons.  Not for use by third-party applications.",
+    "name": "android.permission.STATUS_BAR",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows applications to RW to diagnostic resources.  Not for use by third-party applications.",
+    "name": "android.permission.DIAGNOSTIC",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allow an application to request that a signal be sent to all persistent processes.  Not for use by third-party applications.",
+    "name": "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Allows an application to control whether activities are immediately finished when put in the background.  Not for use by third-party applications.",
+    "name": "android.permission.SET_ALWAYS_FINISH",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Allows an application to set the maximum number of (not needed) application processes that can be running.  Not for use by third-party applications.",
+    "name": "android.permission.SET_PROCESS_LIMIT",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Configure an application for debugging.  Not for use by third-party applications.",
+    "name": "android.permission.SET_DEBUG_APP",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Allows an application to read the low-level system log files.  Not for use by third-party applications, because Log entries can contain the user's private information.",
+    "name": "android.permission.READ_LOGS",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Allows an application to retrieve state dump information from system services.  Not for use by third-party applications.",
+    "name": "android.permission.DUMP",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Allows an application to read or write the secure system settings.  Not for use by third-party applications.",
+    "name": "android.permission.WRITE_SECURE_SETTINGS",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Allows an application to use any media decoder when decoding for playback",
+    "name": "android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to clear the caches of all installed applications on the device.",
+    "name": "android.permission.CLEAR_APP_CACHE",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows applications to change network connectivity state",
+    "name": "android.permission.CHANGE_NETWORK_STATE",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to allow access the subscribed feeds ContentProvider.",
+    "name": "android.permission.SUBSCRIBED_FEEDS_READ",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows applications to write the apn settings.  Not for use by third-party applications.",
+    "name": "android.permission.WRITE_APN_SETTINGS",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows rename of ASEC volumes",
+    "name": "android.permission.ASEC_RENAME",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows mount / unmount of ASEC volumes",
+    "name": "android.permission.ASEC_MOUNT_UNMOUNT",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows destruction of ASEC volumes",
+    "name": "android.permission.ASEC_DESTROY",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows creation of ASEC volumes",
+    "name": "android.permission.ASEC_CREATE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows access to ASEC non-destructive API calls",
+    "name": "android.permission.ASEC_ACCESS",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows formatting file systems for removable storage.  Not for use by third-party applications.",
+    "name": "android.permission.MOUNT_FORMAT_FILESYSTEMS",
+    "protectionLevel": "system signature"
+  },
+  {
+    "description": "Allows mounting and unmounting file systems for removable storage.  Not for use by third-party applications.",
+    "name": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+    "protectionLevel": "system signature"
+  },
+  {
+    "description": "Allows an application to broadcast sticky intents.  These are broadcasts whose data is held by the system after being finished, so that clients can quickly retrieve that data without having to wait for the next broadcast.",
+    "name": "android.permission.BROADCAST_STICKY",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to receive the ACTION_BOOT_COMPLETED that is broadcast after the system finishes booting.  If you don't request this permission, you will not receive the broadcast at that time.  Though holding this permission does not have any security implications, it can have a negative impact on the user experience by increasing the amount of time it takes the system to start and allowing applications to have themselves running without the user being aware of them.  As such, you must explicitly declare your use of this facility to make that visible to the user.",
+    "name": "android.permission.RECEIVE_BOOT_COMPLETED",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "No longer useful, see addPackageToPreferred for details.",
+    "name": "android.permission.SET_PREFERRED_APPLICATIONS",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to find out the space used by any package.",
+    "name": "android.permission.GET_PACKAGE_SIZE",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "This functionality will be removed in the future; please do not use. Allow an application to make its activities persistent.",
+    "name": "android.permission.PERSISTENT_ACTIVITY",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Modify the global animation scaling factor.  Not for use by third-party applications.",
+    "name": "android.permission.SET_ANIMATION_SCALE",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Allows an application to retrieve the content of the active window An active window is the window that has fired an accessibility event.",
+    "name": "android.permission.RETRIEVE_WINDOW_CONTENT",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to call forceStopPackage.",
+    "name": "android.permission.FORCE_STOP_PACKAGES",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to modify the Google service map.  Not for use by third-party applications.",
+    "name": "android.permission.WRITE_GSERVICES",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to read or write the system settings.",
+    "name": "android.permission.WRITE_SETTINGS",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to modify the current configuration, such as locale.",
+    "name": "android.permission.CHANGE_CONFIGURATION",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Allows an application to access all multi-user external storage",
+    "name": "android.permission.ACCESS_ALL_EXTERNAL_STORAGE",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Change the screen compatibility mode of applications",
+    "name": "android.permission.SET_SCREEN_COMPATIBILITY",
+    "protectionLevel": "signature"
+  },
+  {
+    "name": "android.permission.SUBSCRIBED_FEEDS_WRITE",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows applications to read the sync stats",
+    "name": "android.permission.READ_SYNC_STATS",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows applications to write the sync settings",
+    "name": "android.permission.WRITE_SYNC_SETTINGS",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows applications to read the sync settings",
+    "name": "android.permission.READ_SYNC_SETTINGS",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to expand or collapse the status bar.",
+    "name": "android.permission.EXPAND_STATUS_BAR",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows applications to set the system time zone",
+    "name": "android.permission.SET_TIME_ZONE",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows applications to set the system time.  Not for use by third-party applications.",
+    "name": "android.permission.SET_TIME",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows applications to set the wallpaper hints",
+    "name": "android.permission.SET_WALLPAPER_HINTS",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows applications to set the wallpaper",
+    "name": "android.permission.SET_WALLPAPER",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to open windows using the type TYPE_SYSTEM_ALERT, shown on top of all other applications.  Very few applications should use this permission; these windows are intended for system-level interaction with the user.",
+    "name": "android.permission.SYSTEM_ALERT_WINDOW",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to call killBackgroundProcesses.",
+    "name": "android.permission.KILL_BACKGROUND_PROCESSES",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "The restartPackage API is no longer supported.",
+    "name": "android.permission.RESTART_PACKAGES",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to start any activity, regardless of permission protection or exported state.",
+    "name": "android.permission.START_ANY_ACTIVITY",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to change to remove/kill tasks",
+    "name": "android.permission.REMOVE_TASKS",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to change the Z-order of tasks",
+    "name": "android.permission.REORDER_TASKS",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to get full detailed information about recently running tasks, with full fidelity to the real state.",
+    "name": "android.permission.GET_DETAILED_TASKS",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to call APIs that allow it to query and manage users on the device. This permission is not available to third party applications.",
+    "name": "android.permission.MANAGE_USERS",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Fuller form of INTERACT_ACROSS_USERS that removes restrictions on where broadcasts can be sent and allows other types of interactions.",
+    "name": "android.permission.INTERACT_ACROSS_USERS_FULL",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to call APIs that allow it to do interactions across the users on the device, using singleton services and user-targeted broadcasts.  This permission is not available to third party applications.",
+    "name": "android.permission.INTERACT_ACROSS_USERS",
+    "protectionLevel": "signature system development"
+  },
+  {
+    "description": "Allows an application to get information about the currently or recently running tasks.",
+    "name": "android.permission.GET_TASKS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows applications to disable the keyguard",
+    "name": "android.permission.DISABLE_KEYGUARD",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to write to internal media storage",
+    "name": "android.permission.WRITE_MEDIA_STORAGE",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to write to external storage.  Note: If both your ' minSdkVersion and ' targetSdkVersion values are set to 3 or lower, the system implicitly grants your app this permission. If you don't need this permission, be sure your ' targetSdkVersion is 4 or higher.",
+    "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to read from external storage.  Any app that declares the WRITE_EXTERNAL_STORAGE permission is implicitly granted this permission. Currently, this permission is not enforced and all apps still have access to read from external storage without this permission. That will change in a future release and apps will require this permission to read from external storage. So if your app reads from the external storage, you should add this permission to your app now to ensure that it continues to work on future versions of Android. You can test your app with the permission enforced by either running your app on the Android Emulator when running Android 4.1 or higher, or enabling Protect USB storage under Developer options in the Settings app on a device running Android 4.1 or higher. Note: If both your ' minSdkVersion and ' targetSdkVersion values are set to 3 or lower, the system implicitly grants your app this permission. If you don't need this permission, be sure your ' targetSdkVersion is 4 or higher.",
+    "name": "android.permission.READ_EXTERNAL_STORAGE",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to use SIP service",
+    "name": "android.permission.USE_SIP",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to initiate a phone call without going through the Dialer user interface for the user to confirm the call being placed.",
+    "name": "android.permission.CALL_PHONE",
+    "protectionLevel": "dangerous",
+    "permissionFlags": "costsMoney"
+  },
+  {
+    "description": "Allows read access to privileged phone state.  Used internally.",
+    "name": "android.permission.READ_PRIVILEGED_PHONE_STATE",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows read only access to phone state.  Note: If both your ' minSdkVersion and ' targetSdkVersion values are set to 3 or lower, the system implicitly grants your app this permission. If you don't need this permission, be sure your ' targetSdkVersion is 4 or higher.",
+    "name": "android.permission.READ_PHONE_STATE",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows modification of the telephony state - power on, mmi, etc.  Does not include placing calls.  Not for use by third-party applications.",
+    "name": "android.permission.MODIFY_PHONE_STATE",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to monitor, modify, or abort outgoing calls.",
+    "name": "android.permission.PROCESS_OUTGOING_CALLS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows disabling the transmit-indicator LED that is normally on when a camera is in use by an application.",
+    "name": "android.permission.CAMERA_DISABLE_TRANSMIT_LED",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Required to be able to access the camera device.  This will automatically enforce the ' &lt;uses-feature&gt; manifest element for all camera features.  If you do not require all camera features or can properly operate if a camera is not available, then you must modify your manifest as appropriate in order to install on devices that don't support all camera features.",
+    "name": "android.permission.CAMERA",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to record audio",
+    "name": "android.permission.RECORD_AUDIO",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows registration for remote audio playback.",
+    "name": "android.permission.REMOTE_AUDIO_PLAYBACK",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows access to configure network interfaces, configure/use IPSec, etc.",
+    "name": "android.permission.NET_ADMIN",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows access to hardware peripherals.  Intended only for hardware testing.  Not for use by third-party applications.",
+    "name": "android.permission.HARDWARE_TEST",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to access the MTP USB kernel driver.  For use only by the device side MTP implementation.",
+    "name": "android.permission.ACCESS_MTP",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to manage preferences and permissions for USB devices",
+    "name": "android.permission.MANAGE_USB",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to modify global audio settings",
+    "name": "android.permission.MODIFY_AUDIO_SETTINGS",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows using PowerManager WakeLocks to keep processor from sleeping or screen from dimming",
+    "name": "android.permission.WAKE_LOCK",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows access to the flashlight",
+    "name": "android.permission.FLASHLIGHT",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows access to the vibrator",
+    "name": "android.permission.VIBRATE",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows applications to enter Wi-Fi Multicast mode",
+    "name": "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows applications to call into AccountAuthenticators.  Not for use by third-party applications.",
+    "name": "android.permission.ACCOUNT_MANAGER",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows an application to manage the list of accounts in the AccountManager",
+    "name": "android.permission.MANAGE_ACCOUNTS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to request authtokens from the AccountManager",
+    "name": "android.permission.USE_CREDENTIALS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to act as an AccountAuthenticator for the AccountManager",
+    "name": "android.permission.AUTHENTICATE_ACCOUNTS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows access to the list of accounts in the Accounts Service",
+    "name": "android.permission.GET_ACCOUNTS",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows access to the loop radio (Android mesh network) device.",
+    "name": "android.permission.LOOP_RADIO",
+    "protectionLevel": "signature system"
+  },
+  {
+    "name": "android.permission.RECEIVE_DATA_ACTIVITY_CHANGE",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an internal user to use privileged ConnectivityManager APIs.",
+    "name": "android.permission.CONNECTIVITY_INTERNAL",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows applications to perform I/O operations over NFC",
+    "name": "android.permission.NFC",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows bluetooth stack to access files This should only be used by Bluetooth apk.",
+    "name": "android.permission.BLUETOOTH_STACK",
+    "protectionLevel": "signature"
+  },
+  {
+    "description": "Allows applications to discover and pair bluetooth devices",
+    "name": "android.permission.BLUETOOTH_ADMIN",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows applications to connect to paired bluetooth devices",
+    "name": "android.permission.BLUETOOTH",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": ",",
+    "name": "android.permission.CHANGE_WIMAX_STATE",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": ",",
+    "name": "android.permission.ACCESS_WIMAX_STATE",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows applications to change Wi-Fi connectivity state",
+    "name": "android.permission.CHANGE_WIFI_STATE",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows applications to access information about Wi-Fi networks",
+    "name": "android.permission.ACCESS_WIFI_STATE",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows applications to access information about networks",
+    "name": "android.permission.ACCESS_NETWORK_STATE",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows applications to open network sockets.",
+    "name": "android.permission.INTERNET",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to use location features in hardware, such as the geofencing api.  Not for use by third-party applications.",
+    "name": "android.permission.LOCATION_HARDWARE",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to install a location provider into the Location Manager.  Not for use by third-party applications.",
+    "name": "android.permission.INSTALL_LOCATION_PROVIDER",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to access extra location provider commands",
+    "name": "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to create mock location providers for testing",
+    "name": "android.permission.ACCESS_MOCK_LOCATION",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an app to access approximate location derived from network location sources such as cell towers and Wi-Fi.",
+    "name": "android.permission.ACCESS_COARSE_LOCATION",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an app to access precise location from location sources such as GPS, cell towers, and Wi-Fi.",
+    "name": "android.permission.ACCESS_FINE_LOCATION",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to add voicemails into the system.",
+    "name": "com.android.voicemail.permission.ADD_VOICEMAIL",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to broadcast an Intent to set an alarm for the user.",
+    "name": "com.android.alarm.permission.SET_ALARM",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to write (but not read) the user's browsing history and bookmarks.",
+    "name": "com.android.browser.permission.WRITE_HISTORY_BOOKMARKS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to read (but not write) the user's browsing history and bookmarks.",
+    "name": "com.android.browser.permission.READ_HISTORY_BOOKMARKS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to write to the user dictionary.",
+    "name": "android.permission.WRITE_USER_DICTIONARY",
+    "protectionLevel": "normal"
+  },
+  {
+    "description": "Allows an application to read the user dictionary. This should really only be required by an IME, or a dictionary editor like the Settings app.",
+    "name": "android.permission.READ_USER_DICTIONARY",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to write (but not read) the user's calendar data.",
+    "name": "android.permission.WRITE_CALENDAR",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to read the user's calendar data.",
+    "name": "android.permission.READ_CALENDAR",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to write (but not read) the user's personal profile data.",
+    "name": "android.permission.WRITE_PROFILE",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to read the user's personal profile data.",
+    "name": "android.permission.READ_PROFILE",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to write (but not read) the user's social stream data.",
+    "name": "android.permission.WRITE_SOCIAL_STREAM",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to read from the user's social stream.",
+    "name": "android.permission.READ_SOCIAL_STREAM",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to write (but not read) the user's contacts data.  Note: If your app uses the WRITE_CONTACTS permission and both your ' minSdkVersion and ' targetSdkVersion values are set to 15 or lower, the system implicitly grants your app this permission. If you don't need this permission, be sure your ' targetSdkVersion is 16 or higher.",
+    "name": "android.permission.WRITE_CALL_LOG",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to read the user's call log.  Note: If your app uses the READ_CONTACTS permission and both your ' minSdkVersion and ' targetSdkVersion values are set to 15 or lower, the system implicitly grants your app this permission. If you don't need this permission, be sure your ' targetSdkVersion is 16 or higher.",
+    "name": "android.permission.READ_CALL_LOG",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": ",",
+    "name": "android.permission.BIND_DIRECTORY_SEARCH",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to write (but not read) the user's contacts data.",
+    "name": "android.permission.WRITE_CONTACTS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to read the user's contacts data.",
+    "name": "android.permission.READ_CONTACTS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to monitor incoming WAP push messages.",
+    "name": "android.permission.RECEIVE_WAP_PUSH",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to write SMS messages.",
+    "name": "android.permission.WRITE_SMS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to read SMS messages.",
+    "name": "android.permission.READ_SMS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to read previously received cell broadcast messages and to register a content observer to get notifications when a cell broadcast has been received and added to the database. For emergency alerts, the database is updated immediately after the alert dialog and notification sound/vibration/speech are presented.  The 'read' column is then updated after the user dismisses the alert.  This enables supplementary emergency assistance apps to start loading additional emergency information (if Internet access is available) when the alert is first received, and to delay presenting the info to the user until after the initial alert dialog is dismissed.  Pending API council approval",
+    "name": "android.permission.READ_CELL_BROADCASTS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to receive emergency cell broadcast messages, to record or display them to the user.  Not for use by third-party applications.  Pending API council approval",
+    "name": "android.permission.RECEIVE_EMERGENCY_BROADCAST",
+    "protectionLevel": "signature system"
+  },
+  {
+    "description": "Allows an application to monitor incoming MMS messages, to record or perform processing on them.",
+    "name": "android.permission.RECEIVE_MMS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application to monitor incoming SMS messages, to record or perform processing on them.",
+    "name": "android.permission.RECEIVE_SMS",
+    "protectionLevel": "dangerous"
+  },
+  {
+    "description": "Allows an application (Phone) to send a request to other applications to handle the respond-via-message action during incoming calls.  Not for use by third-party applications.",
+    "name": "android.permission.SEND_RESPOND_VIA_MESSAGE",
+    "protectionLevel": "signature system"
+  }
+]
